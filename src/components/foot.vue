@@ -7,6 +7,11 @@
     </div>
   </div>
 </template>
+<script>
+export default {
+  name: 'foot'
+}
+</script>
 <style type="test/css">
 .foot {
   position: fixed;

@@ -1,5 +1,5 @@
 import axios from 'axios'
-const liServise = axios.create({
+const myAxios = axios.create({
   baseURL: 'http://localhost:9999',
   timeout: '3000',
   headers: {
@@ -7,19 +7,21 @@ const liServise = axios.create({
   }
 })
 // baseURL: 'http://www.ljh789.xyz',
-liServise.interceptors.request.use((config) => {
+myAxios.interceptors.request.use((config) => {
   let token = window.localStorage.getItem('token')
   if (token != null) {
     config.headers.Authorization = token
   }
   return config
 })
-liServise.interceptors.response.use(
+myAxios.interceptors.response.use(
   (res) => {
+    // console.log('请求成功')
     return res
   },
   (error) => {
+    // console.log(error.response.data.message)
     return error
   }
 )
-export default liServise
+export default myAxios
