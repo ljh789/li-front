@@ -12,7 +12,11 @@ export default {
   name: 'foot'
 }
 </script>
-<style type="test/css">
+<style scoped>
+a {
+  text-decoration: none;
+  color: #fff;
+}
 .foot {
   position: fixed;
   top: 95%;

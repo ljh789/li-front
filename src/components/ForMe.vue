@@ -31,7 +31,7 @@ export default {
 }
 </script>
 
-<style type="scoped">
+<style scoped>
 .box {
   width: 100%;
   height: 100%;

@@ -5,18 +5,18 @@
         <li id="loginInfo">
           <router-link class="custom-router-link" to="/">首页</router-link>
         </li>
-        <li>
-          <router-link class="custom-router-link" to="/">高考</router-link>
-        </li>
-        <li>
-          <router-link class="custom-router-link" to="/">工作</router-link>
-        </li>
-        <li>
-          <router-link class="custom-router-link" to="/">考公</router-link>
-        </li>
-        <li>
-          <router-link class="custom-router-link" to="/">提升</router-link>
-        </li>
+        <!--        <li>
+                  <router-link class="custom-router-link" to="/">高考</router-link>
+                </li>
+                <li>
+                  <router-link class="custom-router-link" to="/">工作</router-link>
+                </li>
+                <li>
+                  <router-link class="custom-router-link" to="/">考公</router-link>
+                </li>
+                <li>
+                  <router-link class="custom-router-link" to="/">提升</router-link>
+                </li>-->
         <li>
           <router-link class="custom-router-link" to="/forMe"
             >关于我

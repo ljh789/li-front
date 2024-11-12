@@ -14,7 +14,7 @@ export default {
   }
 }
 </script>
-<style>
+<style scoped>
 // 样式设置；毛玻璃感觉背景，左右边距5%
 .container {
   background-color: rgba(255, 255, 255, 0.1); /* 半透明背景 */
