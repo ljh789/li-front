@@ -3,22 +3,24 @@
     <ul>
       <div class="topside">
         <li id="loginInfo">
-          <router-link to="/">首页</router-link>
+          <router-link class="custom-router-link" to="/">首页</router-link>
         </li>
         <li>
-          <router-link to="/">高考</router-link>
+          <router-link class="custom-router-link" to="/">高考</router-link>
         </li>
         <li>
-          <router-link to="/">工作</router-link>
+          <router-link class="custom-router-link" to="/">工作</router-link>
         </li>
         <li>
-          <router-link to="/">考公</router-link>
+          <router-link class="custom-router-link" to="/">考公</router-link>
         </li>
         <li>
-          <router-link to="/">提升</router-link>
+          <router-link class="custom-router-link" to="/">提升</router-link>
         </li>
         <li>
-          <router-link to="/forMe">关于我</router-link>
+          <router-link class="custom-router-link" to="/forMe"
+            >关于我
+          </router-link>
         </li>
       </div>
       <div class="topTool">
@@ -65,12 +67,24 @@ export default {
 }
 </script>
 >
-<style>
+<style scoped>
+.custom-router-link {
+  text-decoration: none;
+  color: #fff;
+}
 .topTool ul li {
   margin-left: 60px;
   position: relative;
   line-height: 24px;
   color: #fff;
+  float: left;
+  margin-left: 60px;
+  position: relative;
+  font-family: PingFang SC;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 .topbar {
@@ -110,7 +124,7 @@ export default {
   opacity: 1;
 }
 
-li {
+.topside li {
   float: left;
   margin-left: 60px;
   position: relative;
@@ -121,15 +135,15 @@ li {
   line-height: 24px;
 }
 
-ol,
+.topside ol,
 ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-a {
+/*.topside a {
   text-decoration: none;
   color: #fff;
-}
+}*/
 </style>
