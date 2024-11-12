@@ -8,6 +8,7 @@
       width="30%"
       :before-close="handleClose"
       append-to-body
+      center="true"
     >
       <el-form
         :model="loginForm"
