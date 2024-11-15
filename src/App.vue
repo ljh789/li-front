@@ -1,10 +1,10 @@
 <template>
   <div id="app">
-    <el-container>
+    <el-container class="el-container">
       <el-header>
         <topbar></topbar>
       </el-header>
-      <el-main>
+      <el-main id="main">
         <router-view></router-view>
       </el-main>
       <el-footer>
@@ -34,47 +34,22 @@ window.addEventListener('scroll', () => {
 })
 </script>
 <style>
+#main {
+  height: 100%;
+}
+
+#main::-webkit-scrollbar {
+  display: none;
+}
+
+.el-container {
+  height: 100%;
+  width: 100%;
+}
 #app {
   height: 100%;
   width: 100%;
 }
-
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
-  transition: background-color 0.3s ease, padding 0.3s ease;
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.8),
-      rgba(255, 255, 255, 0.8)
-    ),
-    url('images/1.jpg') center / cover no-repeat;
-  backdrop-filter: blur(10px); /* 调整模糊程度以达到所需毛玻璃效果 */
-}
-
-.content {
-  height: 1500px; /* 为了模拟页面内容滚动 */
-  padding-top: 50px;
-}
-
-.home {
-  width: 100%;
-  height: 100%;
-}
-
-.homepage {
-  //width: 100%;
-  top: 7%;
-  height: 88%;
-  margin-left: 5%;
-  margin-right: 5%;
-  position: relative;
-}
-
 body {
   background-image: url('images/2.jpg');
   background-size: cover; /* 或者尝试 background-size: 100% 100%; */

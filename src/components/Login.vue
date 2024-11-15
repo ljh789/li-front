@@ -74,13 +74,27 @@ export default {
             .then((response) => {
               console.log('Login内接口请求返回')
               console.log(response)
-              this.$notify({
-                title: '登录成功',
-                message: '期待陪您度过美好的一天！',
-                type: 'success',
-                showClose: false,
-                duration: 1000
-              })
+              if (
+                response.code === 200 &&
+                response.data.message === '登陆成功'
+              ) {
+                this.$notify({
+                  title: '登录成功',
+                  message: '期待陪您度过美好的一天！',
+                  type: 'success',
+                  showClose: false,
+                  duration: 1000
+                })
+              } else {
+                this.$notify({
+                  title: '登录失败',
+                  message: '登录失败,请检查账号和密码！',
+                  type: 'error',
+                  showClose: false,
+                  duration: 1000
+                })
+              }
+
               // this.onLoginSubmit()
               // 处理登录成功逻辑
             })
