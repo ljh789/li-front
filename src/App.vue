@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <el-container class="el-container">
+    <el-container>
       <el-header>
         <topbar></topbar>
       </el-header>
@@ -42,6 +42,10 @@ window.addEventListener('scroll', () => {
   display: none;
 }
 
+.el-header {
+  height: 7% !important;
+  padding: 0;
+}
 .el-container {
   height: 100%;
   width: 100%;
@@ -50,8 +54,18 @@ window.addEventListener('scroll', () => {
   height: 100%;
   width: 100%;
 }
+
+.el-footer {
+  background-color: #1b1e21;
+  padding: 0;
+  display: grid;
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+  height: 40px !important;
+}
 body {
-  background-image: url('images/2.jpg');
+  //background-image: url('images/2.jpg');
+  background-color: #525557;
   background-size: cover; /* 或者尝试 background-size: 100% 100%; */
   background-position: center;
   background-repeat: no-repeat;

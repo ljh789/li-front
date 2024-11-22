@@ -96,7 +96,7 @@ export default {
   z-index: 1;
   border: 1px solid hsla(0, 0%, 100%, 0.08);
   height: 7%;
-  background-color: transparent;
+  background-color: #1b1e21;
   display: inline;
 }
 
@@ -141,9 +141,4 @@ ul {
   padding: 0;
   list-style: none;
 }
-
-/*.topside a {
-  text-decoration: none;
-  color: #fff;
-}*/
 </style>
